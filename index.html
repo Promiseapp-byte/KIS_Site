@@ -133,23 +133,24 @@
         /* Slider */
     .slider {
         position: relative;
-        max-width: 50%;
-        height: 5000px;
+        max-width: 95%;
+        height: 400px;
         overflow: hidden;
+        margin: 0 auto;
     }
     .slides {
         display: flex;
-        height: 50%;
+        height: 20%;
         transition: transform 4s ease-out;
-        width: 400%; /* 7 slides → 100% * 7 */
+        width: 100%; /* 7 slides → 100% * 7 */
     }
     .slides a {
-        min-width: 50%;  /* each slide takes full width */
+        min-width: 90%;  /* each slide takes full width */
         height: 50%;
     }
     .slides a img {
-        width: 50%;
-        height: 50%;
+        width: 55%;
+        height: 950%;
         object-fit: cover;
     }
 
@@ -182,7 +183,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="school_project/images/logo.jpg" alt="School Logo" width="80" height="200" />
+            <img src="images/logo.jpg" alt="School Logo" width="80" height="200" />
         </div>
 
         <div class="school-title">
@@ -199,6 +200,8 @@
         <nav>
             <ul id="nav-links">
                 <li><a href="#about">About Us</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#mission">Mission</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact Us</a></li>
@@ -211,13 +214,13 @@
     <!-- Slider -->
     <div class="slider" id="slider">
         <div class="slides" id="slides">
-            <a href="#gallery"><img src="school_project/images/sch_block.jpg" alt="School Activity 1" width="1080" height="817"></a>
-            <a href="#gallery"><img src="school_project/images/classroom.jpg" alt="School Activity 2" width="30" height="33"></a>
-            <a href="#gallery"><img src="school_project/images/graduation.jpg" alt="School Activity 3" width="1080" height="771"></a>
-            <a href="#gallery"><img src="school_project/images/culturalday.jpg" alt="School Activity 4" width="20" height="25"></a>
-            <a href="#gallery"><img src="school_project/images/fridaywear.jpg" alt="School Activity 5" width="26" height="19"></a>
-            <a href="#gallery"><img src="school_project/images/sirisaac.jpg" alt="School Activity 6" width="18" height="30"></a>
-            <a href="#gallery"><img src="school_project/images/admin.jpg" alt="School Activity 7" width="732" height="1080"></a>
+            <a href="#gallery"><img src="images/sch_block.jpg" alt="School Activity 1" width="1080" height="817"></a>
+            <a href="#gallery"><img src="images/classroom.jpg" alt="School Activity 2" width="640" height="1024"></a>
+            <a href="#gallery"><img src="images/graduation.jpg" alt="School Activity 3" width="1080" height="771"></a>
+            <a href="#gallery"><img src="images/culturalday.jpg" alt="School Activity 4" width="729" height="1080"></a>
+            <a href="#gallery"><img src="images/fridaywear.jpg" alt="School Activity 5" width="2384" height="1703"></a>
+            <a href="#gallery"><img src="images/sirisaac.jpg" alt="School Activity 6" width="1024" height="640"></a>
+            <a href="#gallery"><img src="images/admin.jpg" alt="School Activity 7" width="700" height="200"></a>
         </div>
         <div class="dots" id="dots"></div>
     </div>
@@ -225,6 +228,17 @@
     <section id="about">
         <h2>About Us</h2>
         <p>We are committed to providing world-class education that nurtures academic excellence and character development.</p>
+    </section>
+    <!-- Vision Section -->
+    <section id="vision">
+        <h2>Our Vision</h2>
+        <p>To be a leading institution recognized for nurturing excellence, creativity, and leadership in every student for a brighter future.</p>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>To provide quality education that develops academic skills, moral values, and global perspectives, preparing students to excel in life and contribute meaningfully to society.</p>
     </section>
 
     <section id="gallery">
@@ -245,18 +259,14 @@
             <p><i class="fas fa-map-marker-alt"></i> Nyabema, Macedonia, Ga-West Municipality, Accra</p>
             <p><i class="fab fa-whatsapp"></i> 0209 358 400</p>
         </div>
-        <div !-- Google Map Embed -->
-<div style="margin-top:20px; text-align:center;">
-    <h3>Find Us on the Map</h3>
-    <iframe
-        src="https://maps.app.goo.gl/Df3xKzGzJ26ffuuL6"
-        width="100%"
-        height="400"
-        style="border:0; border-radius:12px;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+         <!-- Google Map Embed -->
+        <div class="map-container" style="margin-top:20px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.123456789!2d-0.234567!3d5.678912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10354abcdef12345%3A0xabcdef1234567890!2sKingsville%20International%20School!5e0!3m2!1sen!2sgh!4v1692371234567!5m2!1sen!2sgh"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
 </div>
         </div>
     </section>
